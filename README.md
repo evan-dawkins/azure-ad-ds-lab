@@ -145,9 +145,6 @@ Real issues encountered and resolved during the build, not simulated for this wr
 
 *"I built a two-VM Active Directory environment in Azure, a domain controller and a domain-joined client, to practice the identity and access management work that comes up in Help Desk and Sysadmin roles. I designed a branch-based OU structure, created users and role-based security groups following least-privilege principles, and delegated limited admin rights to a Helpdesk group. Along the way, I hit and resolved two real issues: a network misconfiguration that knocked my client VM offline, which I fixed using Azure's Serial Console since normal RDP access was down, and a DNS resolution problem that was blocking the domain join, which I diagnosed using `nslookup` and traced to an IPv6 priority conflict. Both taught me that most AD problems trace back to networking and DNS rather than AD itself, which is exactly the kind of troubleshooting mindset I'd bring to a Help Desk role."*
 
-## Resume Bullet Draft *(pending your approval, not final until you sign off)*
-
-> Deployed and configured a two-VM Active Directory environment in Microsoft Azure, including domain controller promotion, branch-based OU design, and role-based security group access; independently diagnosed and resolved DNS and network misconfiguration issues using `nslookup` and Azure Serial Console.
 
 ---
 
