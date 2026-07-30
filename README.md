@@ -68,12 +68,22 @@ Active Directory Structure (lab.local)
 ## Implementation Summary
 
 1. Provisioned `DC01` in Azure and promoted it to a domain controller, creating a new forest (`lab.local`)
+<img width="1469" height="744" alt="Screenshot 2026-07-29 at 10 58 23 AM" src="https://github.com/user-attachments/assets/9481a32d-f7fb-45ac-a081-ccfef2da6e54" />
+<img width="962" height="600" alt="Screenshot 2026-07-29 at 11 22 09 AM" src="https://github.com/user-attachments/assets/16e91cb6-2bc5-431d-a0e4-27e6b31b44d8" />
 2. Built a branch-based OU structure (`_Branches → Oakbrook → Users / Workstations / Laptops`)
+<img width="961" height="606" alt="Screenshot 2026-07-29 at 11 26 30 AM" src="https://github.com/user-attachments/assets/6e44a0e7-137a-4805-b8dd-ae5153efeeb4" />
 3. Created domain user accounts and placed them in the correct branch OU
-4. Created a centralized `_Groups` OU with three role-based security groups (Helpdesk, Accounting, ITSupport) and assigned users accordingly
+<img width="503" height="351" alt="Screenshot 2026-07-29 at 11 32 31 AM" src="https://github.com/user-attachments/assets/25558975-e1f8-4256-b091-dfd0fba0c4af" />
+4. Created a centralized `_Groups` OU with three role-based security groups (Helpdesk, Accounting, ITSupport)
+<img width="962" height="605" alt="Screenshot 2026-07-29 at 11 36 18 AM" src="https://github.com/user-attachments/assets/21bede04-8e6c-4767-82bb-93edc125feaa" />
 5. Provisioned `CLIENT01`, configured it to use `DC01` for DNS, and joined it to the domain
-6. Verified end-to-end authentication: logged in as a domain user on `CLIENT01` and confirmed correct group membership via `whoami /groups`
-7. Completed additional administrative tasks: delegated password-reset rights to the Helpdesk group, configured a domain-wide password policy, and moved the client computer object into its correct OU
+<img width="756" height="533" alt="Screenshot 2026-07-29 at 12 53 46 PM" src="https://github.com/user-attachments/assets/0f4650e4-0b99-4796-8806-a7ec640bece8" />
+6. Logged in as a domain user on `CLIENT01` and confirmed correct group membership via `whoami /groups`
+<img width="1470" height="915" alt="Screenshot 2026-07-29 at 1 03 50 PM" src="https://github.com/user-attachments/assets/d9f398e9-df75-4554-b809-8454f5a321a5" />
+7. Completed additional bonus tasks: delegated password-reset rights to the Helpdesk group, configured a domain-wide password policy, and moved the client computer object into its correct OU
+<img width="490" height="384" alt="Screenshot 2026-07-29 at 1 17 54 PM" src="https://github.com/user-attachments/assets/f5eb5d88-82cd-4fc9-8af6-d9b831f9f8c1" />
+<img width="1082" height="563" alt="Screenshot 2026-07-29 at 1 23 27 PM" src="https://github.com/user-attachments/assets/f30de49b-c8e5-4eab-b5b1-e13eb482be38" />
+<img width="754" height="528" alt="Screenshot 2026-07-29 at 1 26 22 PM" src="https://github.com/user-attachments/assets/b5b8a419-3f12-49f6-9cae-9566f3205669" />
 
 ## Troubleshooting Log
 
